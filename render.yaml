@@ -21,8 +21,9 @@ services:
           property: connectionString
 
   # Frontend React Static Site
-  - type: static
+  - type: web
     name: krishi-kalpa-frontend
+    runtime: static
     rootDir: frontend
     buildCommand: npm install && npm run build
     staticPublishPath: dist
