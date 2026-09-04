@@ -1,0 +1,63 @@
+{
+  "app": {
+    "name": "कृषि-कल्प",
+    "tagline": "बुद्धिमत्ता की खेती, समृद्धि की फ़सल",
+    "decisionIntelligence": "निर्णय बुद्धिमत्ता",
+    "esp32Online": "ESP32 इंजेस्ट ऑनलाइन"
+  },
+  "nav": {
+    "overview": "सारांश",
+    "soilHealth": "मिट्टी स्वास्थ्य",
+    "liveSensors": "लाइव सेंसर",
+    "smartIrrigation": "स्मार्ट सिंचाई",
+    "cropIntelligence": "फ़सल बुद्धिमत्ता",
+    "aiAdvisor": "AI कृषि सलाहकार",
+    "farmEconomics": "कृषि अर्थशास्त्र",
+    "marketIntelligence": "बाज़ार इंटेलिजेंस",
+    "farmMap": "खेत का नक्शा",
+    "environmentalImpact": "पर्यावरणीय प्रभाव",
+    "alerts": "अलर्ट और सूचनाएँ",
+    "settings": "सेटिंग्स"
+  },
+  "topbar": {
+    "startDemo": "2-मिनट डेमो शुरू करें",
+    "runningTour": "टूर चल रहा है...",
+    "demoMode": "डेमो मोड",
+    "liveIot": "लाइव IoT",
+    "language": "भाषा"
+  },
+  "dashboard": {
+    "soilHealth": "मिट्टी स्वास्थ्य",
+    "waterStatus": "जल स्थिति",
+    "cropHealth": "फ़सल स्वास्थ्य",
+    "estimatedProfit": "अनुमानित लाभ",
+    "environmentalRisk": "पर्यावरणीय जोखिम",
+    "marketOpportunity": "बाज़ार अवसर",
+    "rootZoneVWC": "जड़ क्षेत्र VWC",
+    "alluvialLoam": "जलोढ़ दोमट",
+    "netRealization": "शुद्ध प्राप्ति",
+    "ecoScoreIndex": "ईको-स्कोर सूचकांक",
+    "deficit": "कमी",
+    "adequate": "पर्याप्त",
+    "goodVigor": "अच्छा बल",
+    "sustainable": "सतत",
+    "bestArbitrage": "सर्वश्रेष्ठ आर्बिट्रेज",
+    "risk": "जोखिम",
+    "low": "कम"
+  },
+  "demo": {
+    "tourActive": "2-मिनट गाइडेड टूर सक्रिय",
+    "step": "चरण",
+    "step1": "प्रारंभिक बेसलाइन खेत स्थिति की जाँच",
+    "step2": "मिट्टी नमी सूखा तनाव अनुकरण (24%)",
+    "step3": "आने वाली बारिश पूर्वानुमान (85% संभावना)",
+    "step4": "मिट्टी पोषक तत्व संतुलन और लवणता रोकथाम",
+    "step5": "डेमो पूर्ण — कृषि अर्थशास्त्र समीक्षा"
+  },
+  "languages": {
+    "en": "English",
+    "hi": "हिन्दी",
+    "bn": "বাংলা",
+    "as": "অসমীয়া"
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "app": {
+    "name": "কৃষি-কল্প",
+    "tagline": "বুদ্ধিমত্তার চাষ, সমৃদ্ধির ফসল",
+    "decisionIntelligence": "সিদ্ধান্ত বুদ্ধিমত্তা",
+    "esp32Online": "ESP32 ইনজেস্ট অনলাইন"
+  },
+  "nav": {
+    "overview": "সারসংক্ষেপ",
+    "soilHealth": "মাটির স্বাস্থ্য",
+    "liveSensors": "লাইভ সেন্সর",
+    "smartIrrigation": "স্মার্ট সেচ",
+    "cropIntelligence": "ফসল বুদ্ধিমত্তা",
+    "aiAdvisor": "AI কৃষি পরামর্শদাতা",
+    "farmEconomics": "কৃষি অর্থনীতি",
+    "marketIntelligence": "বাজার ইন্টেলিজেন্স",
+    "farmMap": "খামারের মানচিত্র",
+    "environmentalImpact": "পরিবেশগত প্রভাব",
+    "alerts": "সতর্কতা ও বিজ্ঞপ্তি",
+    "settings": "সেটিংস"
+  },
+  "topbar": {
+    "startDemo": "২-মিনিট ডেমো শুরু করুন",
+    "runningTour": "ট্যুর চলছে...",
+    "demoMode": "ডেমো মোড",
+    "liveIot": "লাইভ IoT",
+    "language": "ভাষা"
+  },
+  "dashboard": {
+    "soilHealth": "মাটির স্বাস্থ্য",
+    "waterStatus": "জলের অবস্থা",
+    "cropHealth": "ফসলের স্বাস্থ্য",
+    "estimatedProfit": "আনুমানিক লাভ",
+    "environmentalRisk": "পরিবেশগত ঝুঁকি",
+    "marketOpportunity": "বাজার সুযোগ",
+    "rootZoneVWC": "মূল অঞ্চল VWC",
+    "alluvialLoam": "পলিমাটি দোঁয়াশ",
+    "netRealization": "নিট প্রাপ্তি",
+    "ecoScoreIndex": "ইকো-স্কোর সূচক",
+    "deficit": "ঘাটতি",
+    "adequate": "পর্যাপ্ত",
+    "goodVigor": "ভালো শক্তি",
+    "sustainable": "টেকসই",
+    "bestArbitrage": "সেরা আর্বিট্রেজ",
+    "risk": "ঝুঁকি",
+    "low": "কম"
+  },
+  "demo": {
+    "tourActive": "২-মিনিট গাইডেড ট্যুর সক্রিয়",
+    "step": "ধাপ",
+    "step1": "প্রাথমিক বেসলাইন খামার অবস্থা পরীক্ষা",
+    "step2": "মাটির আর্দ্রতা খরা চাপ অনুকরণ (২৪%)",
+    "step3": "আসন্ন বৃষ্টি পূর্বাভাস (৮৫% সম্ভাবনা)",
+    "step4": "মাটির পুষ্টি ভারসাম্য ও লবণাক্ততা রোধ",
+    "step5": "ডেমো সম্পূর্ণ — কৃষি অর্থনীতি পর্যালোচনা"
+  },
+  "languages": {
+    "en": "English",
+    "hi": "हिन्दी",
+    "bn": "বাংলা",
+    "as": "অসমীয়া"
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "app": {
+    "name": "কৃষি-কল্প",
+    "tagline": "বুদ্ধিমত্তাৰ খেতি, সমৃদ্ধিৰ শস্য",
+    "decisionIntelligence": "সিদ্ধান্ত বুদ্ধিমত্তা",
+    "esp32Online": "ESP32 ইনজেষ্ট অনলাইন"
+  },
+  "nav": {
+    "overview": "সাৰাংশ",
+    "soilHealth": "মাটিৰ স্বাস্থ্য",
+    "liveSensors": "লাইভ চেন্সৰ",
+    "smartIrrigation": "স্মাৰ্ট জলসিঞ্চন",
+    "cropIntelligence": "শস্য বুদ্ধিমত্তা",
+    "aiAdvisor": "AI কৃষি পৰামৰ্শদাতা",
+    "farmEconomics": "কৃষি অৰ্থনীতি",
+    "marketIntelligence": "বজাৰ ইন্টেলিজেন্স",
+    "farmMap": "ফাৰ্মৰ মানচিত্ৰ",
+    "environmentalImpact": "পাৰিপাৰ্শ্বিক প্ৰভাৱ",
+    "alerts": "সতৰ্কতা আৰু জাননী",
+    "settings": "ছেটিংছ"
+  },
+  "topbar": {
+    "startDemo": "২-মিনিট ডেমো আৰম্ভ কৰক",
+    "runningTour": "টুৰ চলি আছে...",
+    "demoMode": "ডেমো ম'ড",
+    "liveIot": "লাইভ IoT",
+    "language": "ভাষা"
+  },
+  "dashboard": {
+    "soilHealth": "মাটিৰ স্বাস্থ্য",
+    "waterStatus": "পানীৰ অৱস্থা",
+    "cropHealth": "শস্যৰ স্বাস্থ্য",
+    "estimatedProfit": "আনুমানিক লাভ",
+    "environmentalRisk": "পাৰিপাৰ্শ্বিক বিপদ",
+    "marketOpportunity": "বজাৰ সুযোগ",
+    "rootZoneVWC": "মূল অঞ্চল VWC",
+    "alluvialLoam": "পলসুৱা মাটি",
+    "netRealization": "নিট প্ৰাপ্তি",
+    "ecoScoreIndex": "ইকো-স্কোৰ সূচক",
+    "deficit": "অভাৱ",
+    "adequate": "পৰ্যাপ্ত",
+    "goodVigor": "ভাল শক্তি",
+    "sustainable": "বহনক্ষম",
+    "bestArbitrage": "সৰ্বোত্তম আৰ্বিট্ৰেজ",
+    "risk": "বিপদ",
+    "low": "কম"
+  },
+  "demo": {
+    "tourActive": "২-মিনিট গাইডেড টুৰ সক্ৰিয়",
+    "step": "পদক্ষেপ",
+    "step1": "প্ৰাৰম্ভিক বেছলাইন ফাৰ্ম অৱস্থা পৰীক্ষা",
+    "step2": "মাটিৰ আৰ্দ্ৰতা খৰাং চাপ অনুকৰণ (২৪%)",
+    "step3": "আগন্তুক বৰষুণ পূৰ্বাভাস (৮৫% সম্ভাৱনা)",
+    "step4": "মাটিৰ পুষ্টি ভাৰসাম্য আৰু লৱণতা ৰোধ",
+    "step5": "ডেমো সম্পূৰ্ণ — কৃষি অৰ্থনীতি পৰ্যালোচনা"
+  },
+  "languages": {
+    "en": "English",
+    "hi": "हिन्दी",
+    "bn": "বাংলা",
+    "as": "অসমীয়া"
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "app": {
+    "name": "Krishi-Kalpa",
+    "tagline": "Cultivating Intelligence, Growing Prosperity",
+    "decisionIntelligence": "Decision Intelligence",
+    "esp32Online": "ESP32 Ingest Online"
+  },
+  "nav": {
+    "overview": "Overview",
+    "soilHealth": "Soil Health",
+    "liveSensors": "Live Sensors",
+    "smartIrrigation": "Smart Irrigation",
+    "cropIntelligence": "Crop Intelligence",
+    "aiAdvisor": "AI Farm Advisor",
+    "farmEconomics": "Farm Economics",
+    "marketIntelligence": "Market Intelligence",
+    "farmMap": "Farm Map",
+    "environmentalImpact": "Environmental Impact",
+    "alerts": "Alerts & Notifications",
+    "settings": "Settings"
+  },
+  "topbar": {
+    "startDemo": "START 2-MINUTE DEMO",
+    "runningTour": "RUNNING TOUR...",
+    "demoMode": "DEMO MODE",
+    "liveIot": "LIVE IoT",
+    "language": "Language"
+  },
+  "dashboard": {
+    "soilHealth": "Soil Health",
+    "waterStatus": "Water Status",
+    "cropHealth": "Crop Health",
+    "estimatedProfit": "Estimated Profit",
+    "environmentalRisk": "Environmental Risk",
+    "marketOpportunity": "Market Opportunity",
+    "rootZoneVWC": "Root Zone VWC",
+    "alluvialLoam": "Alluvial Loam",
+    "netRealization": "Net Realization",
+    "ecoScoreIndex": "Eco-Score Index",
+    "deficit": "DEFICIT",
+    "adequate": "ADEQUATE",
+    "goodVigor": "GOOD VIGOR",
+    "sustainable": "SUSTAINABLE",
+    "bestArbitrage": "BEST ARBITRAGE",
+    "risk": "RISK",
+    "low": "LOW"
+  },
+  "demo": {
+    "tourActive": "2-MINUTE GUIDED TOUR ACTIVE",
+    "step": "Step",
+    "step1": "Inspecting Initial Baseline Farm Conditions",
+    "step2": "Simulating Soil Moisture Drought Stress (24%)",
+    "step3": "Incoming Rain Forecast Detected (85% Probability)",
+    "step4": "Balancing Soil Nutrients & Preventing Salinity",
+    "step5": "Demo Complete — Review Farm Economics"
+  },
+  "languages": {
+    "en": "English",
+    "hi": "हिन्दी",
+    "bn": "বাংলা",
+    "as": "অসমীয়া"
+  }
+}
