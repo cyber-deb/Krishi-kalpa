@@ -19,7 +19,7 @@
     "recharts": "^2.12.2",
     "tailwind-merge": "^2.2.1"
     "i18next": "^26.4.2",
-    "react-i18next": "^17.0.13",
+    "react-i18next": "^17.0.13"
   },
   "devDependencies": {
     "@types/leaflet": "^1.9.8",
