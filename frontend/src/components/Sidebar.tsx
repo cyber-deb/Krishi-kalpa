@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import {
   LayoutDashboard,
   Sprout,
@@ -15,7 +16,6 @@ import {
   Settings,
   X
 } from 'lucide-react';
-import { APP_NAME, APP_TAGLINE } from '../utils/constants';
 
 interface SidebarProps {
   isOpen: boolean;
@@ -23,19 +23,21 @@ interface SidebarProps {
 }
 
 export const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
+  const { t } = useTranslation();
+
   const navLinks = [
-    { to: "/", label: "Overview", icon: LayoutDashboard },
-    { to: "/soil", label: "Soil Health", icon: Sprout },
-    { to: "/sensors", label: "Live Sensors", icon: Activity },
-    { to: "/irrigation", label: "Smart Irrigation", icon: Droplets },
-    { to: "/crop", label: "Crop Intelligence", icon: Cpu },
-    { to: "/ai-advisor", label: "AI Farm Advisor", icon: Bot },
-    { to: "/economics", label: "Farm Economics", icon: TrendingUp },
-    { to: "/market", label: "Market Intelligence", icon: ShoppingBag },
-    { to: "/map", label: "Farm Map", icon: MapIcon },
-    { to: "/environmental", label: "Environmental Impact", icon: Leaf },
-    { to: "/alerts", label: "Alerts & Notifications", icon: Bell },
-    { to: "/settings", label: "Settings", icon: Settings },
+    { to: "/", labelKey: "nav.overview", icon: LayoutDashboard },
+    { to: "/soil", labelKey: "nav.soilHealth", icon: Sprout },
+    { to: "/sensors", labelKey: "nav.liveSensors", icon: Activity },
+    { to: "/irrigation", labelKey: "nav.smartIrrigation", icon: Droplets },
+    { to: "/crop", labelKey: "nav.cropIntelligence", icon: Cpu },
+    { to: "/ai-advisor", labelKey: "nav.aiAdvisor", icon: Bot },
+    { to: "/economics", labelKey: "nav.farmEconomics", icon: TrendingUp },
+    { to: "/market", labelKey: "nav.marketIntelligence", icon: ShoppingBag },
+    { to: "/map", labelKey: "nav.farmMap", icon: MapIcon },
+    { to: "/environmental", labelKey: "nav.environmentalImpact", icon: Leaf },
+    { to: "/alerts", labelKey: "nav.alerts", icon: Bell },
+    { to: "/settings", labelKey: "nav.settings", icon: Settings },
   ];
 
   return (
@@ -60,8 +62,8 @@ export const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
               <Sprout className="w-6 h-6 text-emerald-300" />
             </div>
             <div>
-              <h1 className="font-bold text-lg text-white tracking-wide">{APP_NAME}</h1>
-              <p className="text-[10px] text-emerald-400/90 font-medium tracking-tight uppercase">Decision Intelligence</p>
+              <h1 className="font-bold text-lg text-white tracking-wide">{t('app.name')}</h1>
+              <p className="text-[10px] text-emerald-400/90 font-medium tracking-tight uppercase">{t('app.decisionIntelligence')}</p>
             </div>
           </div>
           <button
@@ -89,7 +91,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
                 `}
               >
                 <Icon className="w-4 h-4 shrink-0" />
-                <span>{item.label}</span>
+                <span>{t(item.labelKey)}</span>
               </NavLink>
             );
           })}
@@ -99,10 +101,10 @@ export const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
         <div className="p-4 border-t border-forest-800 bg-[#081e11]">
           <div className="flex items-center gap-2 mb-1.5">
             <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-            <span className="text-xs font-semibold text-emerald-300">ESP32 Ingest Online</span>
+            <span className="text-xs font-semibold text-emerald-300">{t('app.esp32Online')}</span>
           </div>
           <p className="text-[11px] text-slate-400 italic leading-tight">
-            "{APP_TAGLINE}"
+            "{t('app.tagline')}"
           </p>
         </div>
       </aside>
