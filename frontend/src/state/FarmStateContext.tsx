@@ -398,7 +398,11 @@ const FarmStateContext = createContext<FarmStateContextType | undefined>(undefin
 
 export const FarmStateProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
   const [farmState, setFarmState] = useState<FarmState>(INITIAL_FARM_STATE);
-  const [activeScenario, setActiveScenario] = useState<SimulationScenario | null>(CLIENT_SCENARIO_TEMPLATES[0]);
+  const [activeScenario, setActiveScenario] = useState<SimulationScenario | null>(
+    CLIENT_SCENARIO_TEMPLATES.find(
+      (t) => t.scenario_id === 'sc_healthy_optimal_farm'
+    ) || null
+  );
   const [scenarioHistory, setScenarioHistory] = useState<ScenarioHistoryItem[]>([
     {
       id: 1,
