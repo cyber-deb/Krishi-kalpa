@@ -416,9 +416,9 @@ export const FarmMapPage: React.FC = () => {
           </div>
 
           {/* Leaflet Satellite Container */}
-          <div className="relative w-full h-84 sm:h-96 md:h-[430px] rounded-2xl overflow-hidden border border-stone-800 shadow-inner bg-stone-950">
+          <div className="relative w-full min-h-[350px] h-[50vh] md:h-[450px] lg:h-[500px] rounded-2xl overflow-hidden border border-stone-800 shadow-inner bg-stone-950">
             {/* Map Container Element */}
-            <div ref={mapContainerRef} className="w-full h-full z-0" />
+            <div ref={mapContainerRef} className="w-full h-full absolute inset-0 z-0" />
 
             {/* NDVI / Moisture Overlay Graphic when mode selected */}
             {mapLayer === 'ndvi' && (
