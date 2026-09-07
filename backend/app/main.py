@@ -3,7 +3,7 @@ import logging
 from contextlib import asynccontextmanager
 from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import JSONResponse
+from fastapi.responses import JSONResponse, HTMLResponse # Added HTMLResponse
 
 from app.database.database import Base, engine
 from app.api.endpoints import router as api_router
@@ -58,8 +58,33 @@ async def global_exception_handler(request: Request, exc: Exception):
 # Include API Router
 app.include_router(api_router)
 
-@app.get("/")
-def root():
+# REPLACED ROOT ROUTE FOR QR CODE REDIRECT
+@app.get("/", response_class=HTMLResponse)
+def wake_and_redirect():
+    # ⚠️ REPLACE THIS with your actual deployed Render frontend URL
+    frontend_url = "https://krishi-kalpa-frontend.onrender.com/" 
+    
+    html_content = f"""
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <title>Loading Krishi-Kalpa...</title>
+        <meta http-equiv="refresh" content="2;url={frontend_url}" />
+      </head>
+      <body style="font-family: sans-serif; text-align: center; padding-top: 20%; background-color: #f4f4f9;">
+        <h2 style="color: #2e7d32;">Waking up Krishi-Kalpa server... 🌾</h2>
+        <p>Redirecting you to the application now!</p>
+        <script>
+          setTimeout(() => {{ window.location.href = "{frontend_url}"; }}, 1500);
+        </script>
+      </body>
+    </html>
+    """
+    return html_content
+
+# If you still want the old JSON status, you can add it on a new path like this:
+@app.get("/status")
+def status():
     return {
         "application": "Krishi-Kalpa",
         "motto": "Cultivating Intelligence, Growing Prosperity",
