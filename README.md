@@ -20,19 +20,19 @@ Unlike traditional static dashboards, every screen in Krishi-Kalpa is dynamicall
 ## 🎯 2. Core Problems Solved
 
 ```
-               SOIL HEALTH (NPK, pH, Salinity, Organic Carbon)
-                                     ↓
-                 SMART INPUT & IRRIGATION MANAGEMENT
-                                     ↓
-                    LOWER FARMING INPUT COSTS (20-30%)
-                                     ↓
-                       HIGHER CROP PRODUCTIVITY
-                                     ↓
-                     HIGHER NET FARMER PROFIT
-                                     ↓
-                   LOWER FINANCIAL DEBT PRESSURE
-                                     ↓
-                     SUSTAINABLE AGRICULTURE
+               SOIL HEALTH (NPK, pH, Salinity, Organic Carbon)
+                                     ↓
+                 SMART INPUT & IRRIGATION MANAGEMENT
+                                     ↓
+                    LOWER FARMING INPUT COSTS (20-30%)
+                                     ↓
+                       HIGHER CROP PRODUCTIVITY
+                                     ↓
+                     HIGHER NET FARMER PROFIT
+                                     ↓
+                   LOWER FINANCIAL DEBT PRESSURE
+                                     ↓
+                     SUSTAINABLE AGRICULTURE
 ```
 
 1. **Soil Degradation & Chemical Over-Application:** Indiscriminate urea and fertilizer dumping causes soil acidification, salinity lockup, and groundwater pollution. Krishi-Kalpa continuously evaluates soil health and generates tailored soil amendment plans.
@@ -46,28 +46,28 @@ Unlike traditional static dashboards, every screen in Krishi-Kalpa is dynamicall
 
 ```
 ┌────────────────────────────────────────────────────────────────────────┐
-│                        FARM STATE / SINGLE SOURCE OF TRUTH             │
+│                        FARM STATE / SINGLE SOURCE OF TRUTH             │
 └───────────────────────────────────┬────────────────────────────────────┘
-                                    │
-         ┌──────────────────────────┼──────────────────────────┐
-         ↓                          ↓                          ↓
- ┌───────────────┐          ┌───────────────┐          ┌───────────────┐
- │ IoT Telemetry │          │ Soil Health   │          │ Smart Water   │
- │ (ESP32 Node)  │          │ (NPK, pH, EC) │          │ (Radar Sync)  │
- └───────┬───────┘          └───────┬───────┘          └───────┬───────┘
-         │                          │                          │
-         └──────────────────────────┼──────────────────────────┘
-                                    ↓
- ┌───────────────────────────────────────────────────────────────────────┐
- │               AI FARM ADVISOR ("WHAT SHOULD I DO TODAY?")              │
- └──────────────────────────────────┬────────────────────────────────────┘
-                                    │
-         ┌──────────────────────────┼──────────────────────────┐
-         ↓                          ↓                          ↓
- ┌───────────────┐          ┌───────────────┐          ┌───────────────┐
- │Farm Economics │          │ Market Mandi  │          │ GIS Farm Map  │
- │(Profit/Debt)  │          │ Intelligence  │          │ Spatial Health│
- └───────────────┘          └───────────────┘          └───────────────┘
+                                    │
+         ┌──────────────────────────┼──────────────────────────┐
+         ↓                          ↓                          ↓
+ ┌───────────────┐          ┌───────────────┐          ┌───────────────┐
+ │ IoT Telemetry │          │ Soil Health   │          │ Smart Water   │
+ │ (ESP32 Node)  │          │ (NPK, pH, EC) │          │ (Radar Sync)  │
+ └───────┬───────┘          └───────┬───────┘          └───────┬───────┘
+         │                          │                          │
+         └──────────────────────────┼──────────────────────────┘
+                                    ↓
+ ┌───────────────────────────────────────────────────────────────────────┐
+ │               AI FARM ADVISOR ("WHAT SHOULD I DO TODAY?")              │
+ └──────────────────────────────────┬────────────────────────────────────┘
+                                    │
+         ┌──────────────────────────┼──────────────────────────┐
+         ↓                          ↓                          ↓
+ ┌───────────────┐          ┌───────────────┐          ┌───────────────┐
+ │Farm Economics │          │ Market Mandi  │          │ GIS Farm Map  │
+ │(Profit/Debt)  │          │ Intelligence  │          │ Spatial Health│
+ └───────────────┘          └───────────────┘          └───────────────┘
 ```
 
 - **Frontend:** React 18, TypeScript, Vite, Tailwind CSS, Recharts, Lucide Icons, Leaflet GIS.
@@ -75,57 +75,62 @@ Unlike traditional static dashboards, every screen in Krishi-Kalpa is dynamicall
 - **Hardware IoT:** ESP32 DevKit V1, Capacitive Soil Moisture, 7-in-1 Modbus RS485 NPK/pH/EC Probe, DHT22, Rain Sensor, 5V Optocoupler Relay.
 - **Multi-Language i18n:** Full support for **13 Indian Languages** in their native script (English, हिन्दी, বাংলা, मराठी, తెలుగు, தமிழ், ગુજરાતી, ಕನ್ನಡ, മലയാളം, ਪੰਜਾਬੀ, ଓଡ଼ିଆ, অসমীয়া, اردو).
 
+
+### 🤖 AI-Assisted Development
+
+Development of Krishi-Kalpa was supported by an extensive multi-agent AI workflow, with **700+ AI agent/model-assisted iterations** used across ideation, architecture, coding, debugging, UI refinement, documentation, and testing. The workflow included tools and models such as **Claude, Kimi, Grok, Gemini, ChatGPT, DeepSeek, Qwen, Mistral, Perplexity etc. alongside conventional development and engineering practices.
+
 ---
 
 ## 📁 4. Folder Structure
 
 ```
 krishi-kalpa/
-├── README.md                 # Complete documentation & hackathon demo guide
-├── render.yaml               # Render single-repo blueprint deployment config
-├── .gitignore                # Git exclusions
+├── README.md                 # Complete documentation & hackathon demo guide
+├── render.yaml               # Render single-repo blueprint deployment config
+├── .gitignore                # Git exclusions
 │
-├── frontend/                 # React 18 + TypeScript + Vite SPA
-│   ├── package.json          # Frontend dependencies
-│   ├── vite.config.ts        # Vite configuration
-│   ├── tsconfig.json         # TypeScript compiler configuration
-│   ├── tailwind.config.js    # Custom agricultural theme palette
-│   ├── postcss.config.js     # PostCSS plugins
-│   ├── index.html            # HTML5 entry point
-│   ├── public/               # Favicon and static assets
-│   └── src/
-│       ├── main.tsx          # React DOM mounting
-│       ├── App.tsx           # Router and application layout
-│       ├── index.css         # Tailwind & smooth transition classes
-│       ├── types/            # TypeScript type definitions
-│       ├── services/         # API HTTP communication layer
-│       ├── data/             # Deterministic fallback agronomic models
-│       ├── state/
-│       │   └── FarmStateContext.tsx # Central Single Source of Truth
-│       ├── i18n/             # 13 Indian language translations
-│       │   ├── index.tsx     # i18n engine & translation hook
-│       │   └── translations/ # JSON files for en, hi, bn, mr, te, ta, gu, kn, ml, pa, or, as, ur
-│       ├── components/       # Navbar, Sidebar, SimulationBar, MetricCard, AdvisorActionCard
-│       └── pages/            # 13 Dedicated responsive dashboard pages
+├── frontend/                 # React 18 + TypeScript + Vite SPA
+│   ├── package.json          # Frontend dependencies
+│   ├── vite.config.ts        # Vite configuration
+│   ├── tsconfig.json         # TypeScript compiler configuration
+│   ├── tailwind.config.js    # Custom agricultural theme palette
+│   ├── postcss.config.js     # PostCSS plugins
+│   ├── index.html            # HTML5 entry point
+│   ├── public/               # Favicon and static assets
+│   └── src/
+│       ├── main.tsx          # React DOM mounting
+│       ├── App.tsx           # Router and application layout
+│       ├── index.css         # Tailwind & smooth transition classes
+│       ├── types/            # TypeScript type definitions
+│       ├── services/         # API HTTP communication layer
+│       ├── data/             # Deterministic fallback agronomic models
+│       ├── state/
+│       │   └── FarmStateContext.tsx # Central Single Source of Truth
+│       ├── i18n/             # 13 Indian language translations
+│       │   ├── index.tsx     # i18n engine & translation hook
+│       │   └── translations/ # JSON files for en, hi, bn, mr, te, ta, gu, kn, ml, pa, or, as, ur
+│       ├── components/       # Navbar, Sidebar, SimulationBar, MetricCard, AdvisorActionCard
+│       └── pages/            # 13 Dedicated responsive dashboard pages
 │
-├── backend/                  # Python FastAPI Backend
-│   ├── requirements.txt      # Python dependencies
-│   ├── .env.example          # Environment variable template
-│   └── app/
-│       ├── main.py           # FastAPI application entry point & CORS
-│       ├── database/         # SQLAlchemy DB connection & SQLite fallback
-│       ├── models/           # Sensor readings & scenario history models
-│       ├── schemas/          # Pydantic data schemas
-│       ├── api/              # REST API routes (/api/farm, /api/sensors, etc.)
-│       ├── services/         # Soil, Irrigation, Crop, Economics, Market, Sustainability engines
-│       ├── ai/               # AI Farm Advisor decision rules
-│       └── simulation/       # Farm simulation state & 20+ scenario templates
+├── backend/                  # Python FastAPI Backend
+│   ├── requirements.txt      # Python dependencies
+│   ├── .env.example          # Environment variable template
+│   └── app/
+│       ├── main.py           # FastAPI application entry point & CORS
+│       ├── database/         # SQLAlchemy DB connection & SQLite fallback
+│       ├── models/           # Sensor readings & scenario history models
+│       ├── schemas/          # Pydantic data schemas
+│       ├── api/              # REST API routes (/api/farm, /api/sensors, etc.)
+│       ├── services/         # Soil, Irrigation, Crop, Economics, Market, Sustainability engines
+│       ├── ai/               # AI Farm Advisor decision rules
+│       └── simulation/       # Farm simulation state & 20+ scenario templates
 │
-└── hardware/                 # ESP32 IoT Station & Schematics
-    ├── README.md             # Hardware flashing guide
-    ├── BOM.md                # Bill of Materials with Indian prototype pricing
-    ├── wiring/               # ASCII & pinout wiring diagram
-    └── esp32/                # Production-ready Arduino C++ code
+└── hardware/                 # ESP32 IoT Station & Schematics
+    ├── README.md             # Hardware flashing guide
+    ├── BOM.md                # Bill of Materials with Indian prototype pricing
+    ├── wiring/               # ASCII & pinout wiring diagram
+    └── esp32/                # Production-ready Arduino C++ code
 ```
 
 ---
@@ -214,12 +219,12 @@ All 13 supported Indian languages are rendered in their **native script with no 
 1. Connect the sensors according to `hardware/wiring/wiring-diagram.md`.
 2. Open `hardware/esp32/esp32_sensor_code.ino` in Arduino IDE.
 3. Set your WiFi credentials and backend endpoint:
-   ```cpp
-   const char* WIFI_SSID     = "YOUR_WIFI";
-   const char* WIFI_PASSWORD = "YOUR_PASSWORD";
-   const char* SERVER_URL    = "http://YOUR_SERVER_IP:8000/api/sensors/data";
-   const char* DEVICE_ID     = "ESP32-FARM-001";
-   ```
+   ```cpp
+   const char* WIFI_SSID     = "YOUR_WIFI";
+   const char* WIFI_PASSWORD = "YOUR_PASSWORD";
+   const char* SERVER_URL    = "http://YOUR_SERVER_IP:8000/api/sensors/data";
+   const char* DEVICE_ID     = "ESP32-FARM-001";
+   ```
 4. Flash the sketch to your ESP32. Real telemetry will automatically stream into Krishi-Kalpa!
 
 ---
@@ -229,15 +234,15 @@ All 13 supported Indian languages are rendered in their **native script with no 
 ### Method A: Git Command Line (Recommended)
 1. Create a new repository on GitHub named `krishi-kalpa`.
 2. In your local terminal:
-   ```bash
-   cd krishi-kalpa
-   git init
-   git add .
-   git commit -m "Initial commit: Krishi-Kalpa connected agricultural intelligence platform"
-   git branch -M main
-   git remote add origin https://github.com/YOUR_USERNAME/krishi-kalpa.git
-   git push -u origin main
-   ```
+   ```bash
+   cd krishi-kalpa
+   git init
+   git add .
+   git commit -m "Initial commit: Krishi-Kalpa connected agricultural intelligence platform"
+   git branch -M main
+   git remote add origin https://github.com/YOUR_USERNAME/krishi-kalpa.git
+   git push -u origin main
+   ```
 
 ### Method B: GitHub Web Drag-and-Drop
 1. Create a new repository on GitHub named `krishi-kalpa`.
@@ -255,8 +260,8 @@ Krishi-Kalpa includes a unified `render.yaml` Blueprint file for automated deplo
 2. Click **New +** > **Blueprint**.
 3. Connect your GitHub repository `krishi-kalpa`.
 4. Render will automatically detect `render.yaml` and configure:
-   - **Backend Web Service:** FastAPI (`python -r requirements.txt`, `uvicorn app.main:app`)
-   - **Frontend Static Site:** React (`npm install && npm run build`, publish dir: `./frontend/dist`)
+   - **Backend Web Service:** FastAPI (`python -r requirements.txt`, `uvicorn app.main:app`)
+   - **Frontend Static Site:** React (`npm install && npm run build`, publish dir: `./frontend/dist`)
 5. Click **Apply**.
 6. Once deployed, set the frontend environment variable `VITE_API_URL` to your live backend Render URL (e.g. `https://krishi-kalpa-backend.onrender.com`).
 
@@ -268,12 +273,12 @@ Krishi-Kalpa includes a unified `render.yaml` Blueprint file for automated deplo
 - **Step 2 (Live Sensors):** Navigate to **Live Sensors**. Show the 10 real-time parameters, ESP32 device health, and 12-hour historical trend charts.
 - **Step 3 (Simulation Trigger):** Click **"Generate Farm Scenario"**. Scenario: *Low Moisture + Nitrogen Deficiency*. Show the smooth "Analyzing Farm..." transition.
 - **Step 4 (Interconnectedness):** Show that:
-  - Sensors update to Moisture: 24%, N: 22 mg/kg.
-  - Soil Health score drops to 41/100.
-  - AI Advisor updates with urgent irrigation and fertigation instructions.
-  - Smart Irrigation activates Virtual Pump **ON**.
-  - Farm Economics recalculates fertilizer cost and profit projections.
-  - Farm Map marks Zone A in red (*Water Stress*).
+  - Sensors update to Moisture: 24%, N: 22 mg/kg.
+  - Soil Health score drops to 41/100.
+  - AI Advisor updates with urgent irrigation and fertigation instructions.
+  - Smart Irrigation activates Virtual Pump **ON**.
+  - Farm Economics recalculates fertilizer cost and profit projections.
+  - Farm Map marks Zone A in red (*Water Stress*).
 - **Step 5 (Second Scenario):** Click **"Generate Farm Scenario"** again. Scenario: *High Moisture + Monsoon Downpour (88% rain)*.
 - **Step 6 (Resource Conservation):** Show that Smart Irrigation automatically sets irrigation to **DO NOT IRRIGATE**, saving 22,000 Litres of groundwater and logging ₹420 in electricity savings.
 - **Step 7 (Multi-Language):** Open the Language dropdown. Switch to **हिन्दी**, **বাংলা**, **मराठी**, or **తెలుగు**. Show the entire dashboard, alerts, advice, and charts instantly translating in native script.
@@ -283,5 +288,5 @@ Krishi-Kalpa includes a unified `render.yaml` Blueprint file for automated deplo
 
 ## 📜 12. License & Scientific Disclaimer
 
-**License:** MIT License  
+**License:** MIT License  
 **Scientific Disclaimer:** *Agronomic recommendations and financial projections generated by Krishi-Kalpa are model-based indicative estimates designed for farmer decision support. Prototype optical/capacitive IoT sensors should be periodically cross-calibrated against certified agricultural laboratory soil testing cards.*
