@@ -115,6 +115,7 @@ krishi-kalpa/
 │
 ├── backend/                  # Python FastAPI Backend
 │   ├── requirements.txt      # Python dependencies
+|   ├── krishi_kalpa.db       # UI Language Translation Database
 │   ├── .env.example          # Environment variable template
 │   └── app/
 │       ├── main.py           # FastAPI application entry point & CORS
