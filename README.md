@@ -78,7 +78,7 @@ Unlike traditional static dashboards, every screen in Krishi-Kalpa is dynamicall
 
 ### 🤖 AI-Assisted Development
 
-Development of Krishi-Kalpa was supported by an extensive multi-agent AI workflow, with **700+ AI agent/model-assisted iterations** used across ideation, architecture, coding, debugging, UI refinement, documentation, and testing. The workflow included tools and models such as **Claude, Kimi, Grok, Gemini, ChatGPT, DeepSeek, Qwen, Mistral, Perplexity etc. alongside conventional development and engineering practices.
+Development of Krishi-Kalpa was supported by an extensive multi-agent AI workflow, with **700+ AI agent/model-assisted iterations** used across ideation, architecture, coding, debugging, UI refinement, documentation, and testing. The workflow included tools and models such as **Claude, Kimi, Grok, Gemini, ChatGPT, DeepSeek, Qwen, Mistral, Perplexity** etc. alongside conventional development and engineering practices.
 
 ---
 
